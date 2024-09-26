@@ -1,0 +1,3 @@
+# Everyday at 8am
+# Replace with path of bash script
+0 8 * * * sh /path/to/run.sh
