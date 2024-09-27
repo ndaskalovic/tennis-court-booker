@@ -300,6 +300,7 @@ class BookingSession:
         if len(matching_hard_courts) > 0:
             courtId = matching_hard_courts[0]['courtId']
         elif len(matching_carpet_courts) > 0:
+            logger.debug(f"[Book Court] Found carpet courts: {matching_carpet_courts}")
             courtId = matching_carpet_courts[0]['courtId']
         else:
             logger.info(
